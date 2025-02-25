@@ -27,43 +27,47 @@
             <p class="mb-5 mx-4 text-black">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
     
             <div class="mx-4 grid grid-cols-3 gap-5 ">
-                <div class="p-4 text-center  border rounded-xl border-gray-400 ">
+                <button ><div id="add-money" class="p-4 text-center hover:bg-green-400  border rounded-xl border-gray-400 ">
                     <img class="mx-auto" src="img/wallet 1.png" alt="">
                     <h4 class="text-black">Add Money</h4>
-                </div>
-                <div class="p-4 text-center  border rounded-xl border-gray-400 ">
+                </div></button>
+                <button><div id="cashout-box" class="hover:bg-green-400 p-4 text-center  border rounded-xl border-gray-400 ">
                     <img class="mx-auto" src="img/send 1.png" alt="">
                     <h4 class="text-black">Cashout</h4>
-                </div>
-                <div class="p-4 text-center  border rounded-xl border-gray-400 "> 
+                </div></button>
+                <button><div class="hover:bg-green-400 p-4 text-center  border rounded-xl border-gray-400 "> 
                     <img class="mx-auto" src="img/money 1.png" alt="">
-                    <h4 class="text-black">Transer Money</h4>
-                </div>
-                <div class="p-4 text-center  border rounded-xl border-gray-400 ">
+                    <h4 class="text-black">Transermoney</h4>
+                </div></button>
+                <button><div class="hover:bg-green-400 p-4 text-center  border rounded-xl border-gray-400 ">
                     <img class="mx-auto" src="img/financial 1.png" alt="">
                     <h4 class="text-black">Get Bonus</h4>
-                </div>
-                <div class="p-4 text-center  border rounded-xl border-gray-400 ">
+                </div></button>
+               <button> <div class="p-4 text-center hover:bg-green-400  border rounded-xl border-gray-400 ">
                     <img class="mx-auto" src="img/purse 1.png" alt="">
                     <h4 class="text-black">Pay Bill</h4>
-                </div>
-                <div class="p-4 text-center  border rounded-xl border-gray-400 ">
+                </div></button>
+                <button><div class="p-4 text-center hover:bg-green-400 border rounded-xl border-gray-400 ">
                     <img class="mx-auto" src="img/Grou2p.png" alt="">
                     <h4 class="text-black">Transactions</h4>
-                </div>
+                </div></button>
             </div>
             </div>
             
         </section>
-        <div class="my-14 flex justify-center mx-4 text-center ">
-            <h1 class="text-black font-bold text-xl ">Add Money</h1>
+        
+        <section id="addmoney" class="">
             
-        </div>
-        <section>
-            <div class="hero e rounded-lg ">
+           
+                
                 <div class="hero-content flex-col lg:flex-row-reverse">
+
                   
                   <div class="card bg-white w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="my-4 flex justify-center mx-4 text-center ">
+                        <h1 class="text-black font-bold text-xl ">Add Money</h1>
+                    
+                        </div>
                     <form class="card-body"> 
                         <legend class=" label-text">select a bank</legend>
                         <select class="select w-full max-w-xs">
@@ -98,17 +102,64 @@
                         </label>
                       </div>
                       <div id="" class="form-control mt-6">
-                        <button id="btnClick" class="btn btn-primary">Login</button>
+                        <button id="btnClick" class="btn btn-primary font-bold">Add Money</button>
                       </div>
                     </form>
                   </div>
                 </div>
-              </div>
+              
         </section>
         
+        </section>
+        <section id="cashout">
+            
+           
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  
+                  <div class="card bg-white w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="my-4 flex justify-center  text-center ">
+                        <h1 class="text-black font-bold text-xl ">Cash Out</h1>
+                        
+                    </div>
+                    
+                        
+                    <form class="card-body"> 
+                       
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Agent Number</span>
+                        </label>
+                        <input  value="01725645963" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Add Amount</span>
+                        </label>
+                        <input id="cashoutamount"  placeholder="type ammount" class="input input-bordered"  />
+                       
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin Number</span>
+                        </label>
+                        <input  value="1234" id="cashoutpin" class="input input-bordered" required />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                      </div>
+                      <div id="" class="form-control mt-6">
+                        <button id="cashoutbtn" class="btn btn-primary font-bold">Withdra money</button>
+                      </div>
+                    </form>
+                  
+                </div>
+              </div>
+
         </section>
        
     </header>
     <script src="addmoney.js"></script>
+    <script src="toggle.js"></script>
+    <script src="cashout.js"></script>
 </body>
 </html>

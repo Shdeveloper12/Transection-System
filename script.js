@@ -6,7 +6,7 @@ document.getElementById('login-btn')
     const convertedPin=parseInt(pin)
     if(accountNumber.length === 11){
         if(convertedPin===1234){
-            window.location.href="index2.html"
+            window.location.href="main/index.html"
         }
         else{
             alert('incorrect password!');
